@@ -497,6 +497,8 @@ ifeq ($(TARGET_ARCH),arm)
   ifeq ($(TARGET_HAVE_TEGRA_ERRATA_657451),true)
     libc_common_cflags += -DHAVE_TEGRA_ERRATA_657451
   endif
+  # See nvbug 789056
+  libc_common_cflags += -DNV_USE_NEON_MEMCPY=0
 else # !arm
   ifeq ($(TARGET_ARCH),x86)
     libc_crt_target_cflags := -m32
