@@ -44,6 +44,7 @@
 #define TEGRA_FB_WIN_BLEND_COVERAGE 2
 #define TEGRA_FB_WIN_FLAG_INVERT_H 1
 #define TEGRA_FB_WIN_FLAG_INVERT_V 2
+#define TEGRA_FB_WIN_FLAG_TILED 4
 
 struct tegra_fb_windowattr {
  __s32 index;
